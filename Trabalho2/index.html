@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title> Avatar </title>
+
+        	<style type="text/css">
+            		.circle {
+                		width: 130px;
+                		height: 130px;
+                		border-radius: 50%;
+                		float:left;
+                		margin-right: 50px;
+            		}
+            		#red-circle {
+                		background-color: red;
+            		}
+            		#blue-circle {
+                		background-color: blue;
+            		}
+            		#yellow-circle {
+                		background-color: yellow;
+            		}
+
+       		</style>
+
+		<script>
+
+			function create_circle_red() {
+            			var div = document.createElement('div');
+				div.setAttribute('id', 'red-circle');
+				div.classList.add('circle');
+				document.body.appendChild(div);
+
+				div.onclick = function () {
+    					this.style.display = "none";
+				};
+        		}
+
+			function create_circle_blue() {
+            			var div = document.createElement('div');
+				div.setAttribute('id', 'blue-circle');
+				div.classList.add('circle');
+				document.body.appendChild(div);
+
+				div.onclick = function () {
+    					this.style.display = "none";
+				};
+        		}
+
+			function create_circle_yellow() {
+            			var div = document.createElement('div');
+				div.setAttribute('id', 'yellow-circle');
+				div.classList.add('circle');
+				document.body.appendChild(div);
+
+				div.onclick = function () {
+    					this.style.display = "none";
+				};
+        		}
+
+    		</script>
+
+    	</head>
+
+	<body>
+
+		<script>
+
+        		var div1 = document.createElement('div');
+        		div1.innerHTML = '<button onclick="create_circle_red()"> Create Red Sphere </button>';
+        		document.body.appendChild(div1);
+
+			var div2 = document.createElement('div');
+        		div2.innerHTML = '<button onclick="create_circle_blue()"> Create Blue Sphere </button>';
+        		document.body.appendChild(div2);
+
+			var div3 = document.createElement('div');
+        		div3.innerHTML = '<button onclick="create_circle_yellow()"> Create Yellow Sphere </button>';
+        		document.body.appendChild(div3);
+
+   		</script>
+
+    	</body>
+</html>

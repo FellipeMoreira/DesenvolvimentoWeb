@@ -1,0 +1,81 @@
+@keyframes pisca {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.tela .info {
+    flex: 1;
+    display: flex;
+}
+
+.tela .info .div_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tela .info .div_left .seuVoto {
+    display: block;
+    height: 40px;
+    line-height: 50px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.tela .info .div_left .cargo {
+    display: block;
+    height: 40px;
+    line-height: 50px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.tela .info .div_left .div_numeros {
+    padding-left: 2.0rem;
+}
+
+.tela .info .div_left .div_numeros .numero {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin: 0.5rem 0.25rem;
+    font-size: 2.25em;
+    border: 2px solid #444444;
+}
+
+.tela .info .div_left .descricao {
+    flex: 1;
+    padding-top: 0.5rem;
+    padding-left: 2.0rem;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.tela .info .div_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90px;
+}
+
+.tela .fim {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+}
